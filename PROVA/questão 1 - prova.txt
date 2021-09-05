@@ -1,0 +1,7 @@
+Questão 1 - prova
+
+diferença entre algoritmo e programa
+
+Algoritmo é uma sequencia de etapas, onde o objetivo é obter uma saída lógica.
+
+Programa é junção de todos os algoritmos, onde implementa os algoritmos na forma util para o usuário.

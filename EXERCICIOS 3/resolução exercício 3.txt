@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num, cont, cont2, c = 0, result
+
+		escreva ("Digite um número: ")
+		leia (num)
+
+		para (cont = 1; cont <= num; cont++)              ----> irá executar cont <= num e dando afirmativo, executa um novo "para".
+		{
+			para (cont2 = 1; cont2 <= cont; cont2++)  ----> executa, quando cont2 = cont, então roda a ação c = c + 1.
+			{                                         ----> verifica a condição, onde cont2++(2) seria maior que cont(1). finaliza o "para" interno e avnaça a ultima etapa fora das chaves({}).
+				c = c + 1                         ----> retorna ao "para" externo, onde será incrementado, cont = 2.
+				escreva (c, " ")                  ----> cont = 2 <= num. Executa um NOVO "para" interno, onde cont2 = 1 novamente e cont = 2.
+			}                                         ----> quando cont2(1) < cont(2), executa c=c+1, voltando a condição de incremento, onde cont(2) <= cont(1).
+			escreva ("\n")                            ----> com nova condição verdadeira, é executado novamente c=c+1, vontando ao incremento do cont2, onde cont2(3) <= cont(2), finalizando o "para" interno novamente.
+		}	                                          ----> finalizando o "para" interno, passa ao escreva pulando a linha e voltando ao incremento do "para" externo.
+	}                                                         ----> agora com incremento, cont = 3, vontando a realizar cont <= num, e passando para um novo cliclo em um NOVO "PARA INTERNO".
+}                                                                 ----> o programa segue o ciclo até cont ser maior que o número digitado (num).
